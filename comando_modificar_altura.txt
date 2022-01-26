@@ -1,0 +1,34 @@
+conectar el bebop al wifi 
+
+presionamos rapidamente el boton de incio 4 veces para entrar el modo de debug
+
+iniciar una terminal
+
+comando:
+telnet 192.168.42.1
+
+cuando entre escribimos el siguiente comando 
+
+mount -o remount,rw /
+
+editar el fichero 
+
+vi /etc/colibry/common/reference.cfg
+
+linea con valores de velocidad de aterrizaje # 121 
+linea con valres de altura minima # 101
+
+
+
+Para modificar la altura de retorno a casa 
+hacer los paso anteriores pero entrar al archivo 
+
+vi /etc/common/milosboard/reference.cfg
+
+anadimos la linea 
+
+heightToReturnHome=50.0
+
+guardamos con comando shift + z + z
+
+ctrl + z para cancelar la modificacion
